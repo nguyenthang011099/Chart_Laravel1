@@ -17,5 +17,5 @@ Route::get('/', function () {
 Route::get('/stock/add','StockController@create');
 Route::post('/stock/add','StockController@store');
 
-Route::get('/stocks','StockController@index');
-Route::get('/stock/chart','StockController@chart');
+Route::get('/stocks','PhuthoController@index');
+Route::get('/stock/chart','PhuthoController@chart');

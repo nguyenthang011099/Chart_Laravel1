@@ -120,7 +120,7 @@
         $.get(url, function(response){
             response.forEach(function(data){
                 Years.push(data.id);
-                Labels.push(data.stockName);
+               // Labels.push(data.stockName);
                 Wind.push(data.Wind);
                 Temperature.push(data.Temperature);
                 Humid.push(data.Humid);
