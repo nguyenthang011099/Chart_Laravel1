@@ -13,7 +13,7 @@ class BacgiangController extends Controller
     public function chart()
     {
         $result = DB::table('bacgiangs')
-            ->take(100)
+            ->take(20)
             // orderBy('Humid')
             // ->where('Temperature',30)
             ->get();

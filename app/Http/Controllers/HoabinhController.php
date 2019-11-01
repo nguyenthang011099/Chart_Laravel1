@@ -13,7 +13,7 @@ class HoabinhController extends Controller
     public function chart()
     {
         $result = DB::table('hoabinhs')
-            ->take(100)
+            ->take(20)
             // orderBy('Humid')
             // ->where('Temperature',30)
             ->get();

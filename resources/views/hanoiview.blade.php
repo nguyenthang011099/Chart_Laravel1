@@ -119,7 +119,7 @@
     $(document).ready(function(){
         $.get(url, function(response){
             response.forEach(function(data){
-                Years.push(data.id);
+                Years.push(data.Time);
                 // Labels.push(data.stockName);
                 Wind.push(data.Wind);
                 Temperature.push(data.Temperature);
@@ -130,12 +130,13 @@
                 type: 'line',
                 data: {
                     labels:Years,
-                    datasets: [{
-                        label: 'Wind',
-                        data: Wind,
-                        borderColor:'rgba(42,176,17)',
-                        borderWidth: 3
-                    },
+                    datasets: [
+                            {
+                            label: 'Wind',
+                            data: Wind,
+                            borderColor:'rgba(42,176,17)',
+                            borderWidth: 3
+                        },
                         {
                             label: 'Temperature',
                             data: Temperature,

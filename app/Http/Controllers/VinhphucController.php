@@ -14,8 +14,8 @@ class VinhphucController extends Controller
     public function chart()
     {
         $result = DB::table('vinhphucs')
-            ->take(10)
-            // orderBy('Humid')
+            ->take(20)
+            //->orderBy('id')
             // ->where('Temperature',30)
             ->get();
 
