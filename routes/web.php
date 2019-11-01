@@ -17,9 +17,18 @@ Route::get('/', function () {
 Route::get('/stock/add','StockController@create');
 Route::post('/stock/add','StockController@store');
 
-Route::get('/phuthos','PhuthoController@index');
-Route::get('/haiduongs','HaiduongController@index');
+Route::get('/phutho','PhuthoController@index');
+Route::get('/haiduong','HaiduongController@index');
+Route::get('/hunngyen','HungyenController@index');
+Route::get('/hoabinh','HoabinhController@index');
+Route::get('/bacninh','BacninhController@index');
+Route::get('/bacgiang','BacgiangController@index');
+
 
 
 Route::get('/chartphutho','PhuthoController@chart');
 Route::get('/charthaiduong','HaiduongController@chart');
+Route::get('/charthungyen','HungyenController@chart');
+Route::get('/charthoabinh','HoabinhController@chart');
+Route::get('/chartbacninh','BacninhController@chart');
+Route::get('/chartbacgiang','BacgiangController@chart');

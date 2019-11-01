@@ -34,7 +34,7 @@ class HaiduongController extends Controller
     public function chart()
     {
         $result = DB::table('haiduongs')
-            ->take(3)
+            ->take(30)
             // orderBy('Humid')
             // ->where('Temperature',30)
             ->get();
