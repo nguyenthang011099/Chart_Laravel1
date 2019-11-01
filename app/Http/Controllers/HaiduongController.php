@@ -3,26 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Stock;
-use Illuminate\Support\Facades\DB;
 
-class PhuthoController extends Controller
+class HaiduongController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        return view('phuthoview');
+        return view('haiduongview');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         return view('Stock');
@@ -44,8 +33,8 @@ class PhuthoController extends Controller
 
     public function chart()
     {
-        $result = DB::table('phuthos')
-              ->take(100)
+        $result = DB::table('haiduongs')
+            ->take(3)
             // orderBy('Humid')
             // ->where('Temperature',30)
             ->get();

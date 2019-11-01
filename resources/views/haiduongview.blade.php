@@ -37,16 +37,16 @@
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">City _!_ Province
                     <span class="caret"></span></button>
-                       <ul class="dropdown-menu">
-                            <li><a href="hanoi">Ha Noi</a></li>
-                            <li><a href="haiduong">Hai Duong</a></li>
-                            <li><a href="hungyen">Hung Yen</a></li>
-                            <li><a href="vinhphuc">Vinh Phuc</a></li>
-                            <li><a href="hoabinh">Hoa Binh</a></li>
-                            <li><a href="phutho">Phu Tho</a></li>
-                            <li><a href="bacninh">Bac Ninh</a></li>
-                            <li><a href="bacgiang">Bac Giang</a></li>
-                       </ul>
+                <ul class="dropdown-menu">
+                    <li><a href="hanoi">Ha Noi</a></li>
+                    <li><a href="haiduong">Hai Duong</a></li>
+                    <li><a href="hungyen">Hung Yen</a></li>
+                    <li><a href="vinhphuc">Vinh Phuc</a></li>
+                    <li><a href="hoabinh">Hoa Binh</a></li>
+                    <li><a href="phutho">Phu Tho</a></li>
+                    <li><a href="bacninh">Bac Ninh</a></li>
+                    <li><a href="bacgiang">Bac Giang</a></li>
+                </ul>
             </div>
         </th>
         <th>
@@ -85,9 +85,9 @@
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
-          <div class="panel-heading">
-              <h2 style="text-align:left">Weather Forecast</h2>
-          </div>
+            <div class="panel-heading">
+                <h2 style="text-align:left">Weather Forecast</h2>
+            </div>
             <div class="panel-body">
                 <canvas id="canvas" height="270" width="700"></canvas>
             </div>
@@ -110,7 +110,7 @@
 
 
 
-    var url = "{{url('stock/chart')}}";
+    var url = "{{url('charthaiduong')}}";
     var Years = new Array();
     var Labels = new Array();
     var Wind = new Array();
@@ -120,7 +120,7 @@
         $.get(url, function(response){
             response.forEach(function(data){
                 Years.push(data.id);
-               // Labels.push(data.stockName);
+                // Labels.push(data.stockName);
                 Wind.push(data.Wind);
                 Temperature.push(data.Temperature);
                 Humid.push(data.Humid);
