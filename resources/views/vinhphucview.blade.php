@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Chart</title>
+    <title>Vinh Phuc</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Fonts -->
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
@@ -86,7 +86,7 @@
     <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2 style="text-align:left">Weather Forecast in Vinh Phucgit add .</h2>
+                <h2 style="text-align:left">Weather Forecast in Vinh Phuc</h2>
             </div>
             <div class="panel-body">
                 <canvas id="canvas" height="270" width="700"></canvas>
