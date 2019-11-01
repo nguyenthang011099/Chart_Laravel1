@@ -18,34 +18,12 @@ class PhuthoController extends Controller
         return view('phuthoview');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('Stock');
-    }
-
-
-    public function store(Request $request)
-    {
-        $stock = new Stock([
-            'stockName' => $request->get('stockName'),
-            'stockPrice' => $request->get('stockPrice'),
-            'stockYear' => $request->get('stockYear'),
-        ]);
-        $stock->save();
-
-        return redirect('stocks');
-    }
 
 
     public function chart()
     {
-        $result = DB::table('phuthos')
-              ->take(100)
+        $result = DB::table('hungyens')
+            ->take(100)
             // orderBy('Humid')
             // ->where('Temperature',30)
             ->get();
@@ -54,44 +32,4 @@ class PhuthoController extends Controller
     }
 
 
-
-
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
+
 use Illuminate\Http\Request;
 
-class BacgiangController extends Controller
+class VinhphucController extends Controller
 {
     public function index()
     {
-        return view('bacgiangview');
+        return view('vinhphucview');
     }
     public function chart()
     {
-        $result = DB::table('bacgiangs')
-            ->take(100)
+        $result = DB::table('vinhphucs')
+            ->take(10)
             // orderBy('Humid')
             // ->where('Temperature',30)
             ->get();
