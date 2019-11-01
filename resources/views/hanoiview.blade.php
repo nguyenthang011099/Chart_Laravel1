@@ -86,7 +86,7 @@
     <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2 style="text-align:left">Weather Forecast</h2>
+                <h2 style="text-align:left">Weather Forecast in Ha Noi</h2>
             </div>
             <div class="panel-body">
                 <canvas id="canvas" height="270" width="700"></canvas>
