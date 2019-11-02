@@ -50,29 +50,39 @@
             </div>
         </th>
         <th>
+            <form method="get" action="/hanoi/search">
             <div class="container">
                 <label>From Date</label>
                 <input type="date", name = "" max= "" id="fromDate">
 
-                <label>From Date</label>
-                <input type="date", name = "" max= "" id="toDate">
+{{--                <label>To Date</label>--}}
+{{--                <input type="date", name = "" max= "" id="toDate">--}}
                 <style>
                     .container{
                         margin:auto;
                     }
                 </style>
             </div>
+            </form>
 
         </th>
         <th>
-            <button type="button" class="btn">Truy Xuat</button>
-            <style>
-                .btn{
-
-                    margin:auto;
-                }
-            </style>
+        <form method="post" action="/searchhanoi">
+            {{csrf_field()}}
+            <input  type="text" placeholder="number" name="query">
+            <button type="submit" >Truy Xuat</button>
+        </form>
         </th>
+{{--        <th>--}}
+{{--            <button type="button" class="btn">Truy Xuat</button>--}}
+{{--            <button class="btn btn-primary" name="submit" type="submit">Truy Xuat</button>--}}
+{{--            <style>--}}
+{{--                .btn{--}}
+
+{{--                    margin:auto;--}}
+{{--                }--}}
+{{--            </style>--}}
+{{--        </th>--}}
 
     </tr>
     </thead>
@@ -110,7 +120,7 @@
 
 
 
-    var url = "{{url('charthanoi')}}";
+    var url = "{{url('searchhanoi')}}";
     var Years = new Array();
     var Labels = new Array();
     var Wind = new Array();

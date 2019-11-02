@@ -21,5 +21,14 @@ class HanoiController extends Controller
 
         return response()->json($result);
     }
+    public function search(Request $request){
+        $query= $request->input('query');
+        $result= DB::table('hanois')
+//            ->where('Time',"$query")
+            ->take($query)
+            ->get();
+        return response()->json($result);
+    }
+
 
 }

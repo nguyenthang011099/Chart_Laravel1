@@ -28,6 +28,12 @@ Route::get('/hanoi','HanoiController@index');
 Route::get('/vinhphuc','VinhphucController@index');
 
 
+Route::post('/searchhanoi','HanoiController@search');
+
+
+Route::get('/searchhanoi','HanoiController@search');
+
+
 Route::get('/chartphutho','PhuthoController@chart');
 Route::get('/charthaiduong','HaiduongController@chart');
 Route::get('/charthungyen','HungyenController@chart');
