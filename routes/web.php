@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('hanoiview');
+    return view('hnview');
 });
 Route::get('/stock/add','StockController@create');
 Route::post('/stock/add','StockController@store');
@@ -28,10 +28,12 @@ Route::get('/hanoi','HanoiController@index');
 Route::get('/vinhphuc','VinhphucController@index');
 
 
-Route::post('/searchhanoi','HanoiController@search');
-
+Route::post('/hnview','HanoiController@search');
+Route::get('/hnview','HanoiController@search');
 
 Route::get('/searchhanoi','HanoiController@search');
+
+
 
 
 Route::get('/chartphutho','PhuthoController@chart');

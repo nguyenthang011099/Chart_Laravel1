@@ -27,7 +27,8 @@ class HanoiController extends Controller
 //            ->where('Time',"$query")
             ->take($query)
             ->get();
-        return response()->json($result);
+//        return response()->json($result);
+        return view('hnview',['hanois'=>$result]);
     }
 
 

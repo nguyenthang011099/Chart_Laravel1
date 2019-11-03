@@ -67,7 +67,7 @@
 
         </th>
         <th>
-        <form method="post" action="/searchhanoi">
+        <form method="post" action="/hanoi">
             {{csrf_field()}}
             <input  type="text" placeholder="number" name="query">
             <button type="submit" >Truy Xuat</button>
@@ -120,7 +120,7 @@
 
 
 
-    var url = "{{url('searchhanoi')}}";
+    var url = "{{url('charthanoi')}}";
     var Years = new Array();
     var Labels = new Array();
     var Wind = new Array();
