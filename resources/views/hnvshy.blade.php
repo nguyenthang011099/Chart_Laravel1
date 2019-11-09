@@ -96,10 +96,10 @@
     <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h2 style="text-align:left">Weather Forecast in Ha Noi</h2>
+                <h2 style="text-align:left">Weather Forecast in Ha Noi vs Hung Yen</h2>
             </div>
             <div class="panel-body">
-                <canvas id="canvas" height="270" width="700"></canvas>
+                <canvas id="canvas" height="240" width="600"></canvas>
             </div>
         </div>
     </div>
@@ -132,7 +132,7 @@
     $(document).ready(function(){
         $.get(url, function(response){
             response.forEach(function(data){
-                Years.push(data.Time);
+                Years.push(data.ID);
                 // Labels.push(data.stockName);
                 WindHN.push(data.WindHN);
                 TemperatureHN.push(data.TemperatureHN);
@@ -169,19 +169,19 @@
                         {
                             label: 'WindHY',
                             data: WindHY,
-                            borderColor:'rgba(0,276,207)',
+                            borderColor:'rgba(255, 51, 249)',
                             borderWidth: 3
                         },
                         {
                             label: 'TemperatureHY',
                             data: TemperatureHY,
-                            borderColor:'rgba(206,174,106)',
+                            borderColor:'rgba(255, 236, 51)',
                             borderWidth: 3
                         },
                         {
                             label: 'HumidHY',
                             data: HumidHY,
-                            borderColor:'rgba(116,240,40)',
+                            borderColor:'rgba(0,276,207)',
                             borderWidth: 3
                         }
                     ]

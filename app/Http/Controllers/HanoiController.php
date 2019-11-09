@@ -42,7 +42,7 @@ class HanoiController extends Controller
             ->select('hanois.ID','hanois.TemperatureHN','hungyens.TemperatureHY'
                                 ,'hanois.HumidHN','hungyens.HumidHY'
                                 , 'hanois.WindHN','hungyens.WindHY')
-            ->take(10)
+            ->take(30)
             ->get();
         return response()->json($result);
     }
