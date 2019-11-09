@@ -149,21 +149,39 @@
                     labels:Years,
                     datasets: [
                         {
-                            label: 'Wind',
+                            label: 'WindHN',
                             data: WindHN,
                             borderColor:'rgba(42,176,17)',
                             borderWidth: 3
                         },
                         {
-                            label: 'Temperature',
+                            label: 'TemperatureHN',
                             data: TemperatureHN,
                             borderColor:'rgba(236,74,16)',
                             borderWidth: 3
                         },
                         {
-                            label: 'Humid',
+                            label: 'HumidHN',
                             data: HumidHN,
                             borderColor:'rgba(16,140,240)',
+                            borderWidth: 3
+                        },
+                        {
+                            label: 'WindHY',
+                            data: WindHY,
+                            borderColor:'rgba(0,276,207)',
+                            borderWidth: 3
+                        },
+                        {
+                            label: 'TemperatureHY',
+                            data: TemperatureHY,
+                            borderColor:'rgba(206,174,106)',
+                            borderWidth: 3
+                        },
+                        {
+                            label: 'HumidHY',
+                            data: HumidHY,
+                            borderColor:'rgba(116,240,40)',
                             borderWidth: 3
                         }
                     ]
