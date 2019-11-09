@@ -120,7 +120,7 @@
 
 
 
-    var url = "{{url('charthanoi')}}";
+    var url = "{{url('charthnvshy')}}";
     var Years = new Array();
     var Labels = new Array();
     var WindHN = new Array();
