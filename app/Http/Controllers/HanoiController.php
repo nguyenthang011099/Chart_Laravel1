@@ -11,6 +11,10 @@ class HanoiController extends Controller
     {
         return view('hanoiview');
     }
+    public function compare()
+    {
+        return view('hnvshy');
+    }
     public function chart()
     {
         $result = DB::table('hanois')
@@ -29,6 +33,18 @@ class HanoiController extends Controller
             ->get();
 //        return response()->json($result);
         return view('hnview',['hanois'=>$result]);
+    }
+    public function show(){
+        $result= DB::table('hanois')
+
+
+            ->join('hungyens','hanois.ID','hungyens.ID')
+            ->select('hanois.ID','hanois.TemperatureHN','hungyens.TemperatureHY'
+                                ,'hanois.HumidHN','hungyens.HumidHY'
+                                , 'hanois.WindHN','hungyens.WindHY')
+            ->take(10)
+            ->get();
+        return response()->json($result);
     }
 
 

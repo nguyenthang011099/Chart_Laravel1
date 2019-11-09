@@ -10,10 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Hanoi;
 
-Route::get('/', function () {
-    return view('hnview');
-});
+
+
+Route::get('/', 'HanoiController@show');
+
 Route::get('/stock/add','StockController@create');
 Route::post('/stock/add','StockController@store');
 
@@ -34,7 +36,8 @@ Route::get('/hnview','HanoiController@search');
 Route::get('/searchhanoi','HanoiController@search');
 
 
-
+Route::get('/hnvshy','HanoiController@compare');
+Route::get('/charthnvshy','HanoiController@show');
 
 Route::get('/chartphutho','PhuthoController@chart');
 Route::get('/charthaiduong','HaiduongController@chart');
@@ -45,3 +48,6 @@ Route::get('/chartbacgiang','BacgiangController@chart');
 Route::get('/charthanoi','HanoiController@chart');
 Route::get('/chartvinhphuc','VinhphucController@chart');
 
+Route::get('/hanoi/{id}/hungyens', function($id){
+   return Hanoi::find($id)->hungyens->Temperature;
+});
