@@ -9,11 +9,11 @@ class HanoiController extends Controller
 {
     public function index()
     {
-        return view('hanoiview');
+        return view('only_chart.hanoiview');
     }
     public function compare()
     {
-        return view('hnvshy');
+        return view('camopare_chatr.hnvshy');
     }
     public function chart()
     {
