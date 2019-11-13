@@ -13,7 +13,7 @@ class HanoiController extends Controller
     }
     public function compare()
     {
-        return view('camopare_chatr.hnvshy');
+        return view('compare_chart.hnvshy');
     }
     public function chart()
     {

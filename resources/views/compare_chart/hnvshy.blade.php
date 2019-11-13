@@ -31,9 +31,16 @@
     <thead>
     <tr>
         <th>
-
-
-
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">MODEL
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a>Only 1</a></li>
+                    <li><a>Compare</a></li>
+                </ul>
+            </div>
+        </th>
+        <th>
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">City _!_ Province
                     <span class="caret"></span></button>
@@ -50,13 +57,36 @@
             </div>
         </th>
         <th>
+
+
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="hanoi">Tháng 1</a></li>
+                    <li><a href="haiduong">Tháng 2</a></li>
+                    <li><a href="hungyen">Tháng 3</a></li>
+                    <li><a href="vinhphuc">Tháng 4</a></li>
+                    <li><a href="hoabinh">Tháng 5</a></li>
+                    <li><a href="phutho">Tháng 6</a></li>
+                    <li><a href="bacninh">Tháng 7</a></li>
+                    <li><a href="bacgiang">Tháng 8</a></li>
+                    <li><a href="hanoi">Tháng 9</a></li>
+                    <li><a href="hanoi">Tháng 10</a></li>
+                    <li><a href="hanoi">Tháng 11</a></li>
+                    <li><a href="hanoi">Tháng 12</a></li>
+                </ul>
+            </div>
+        </th>
+        <th>
             <form method="get" action="/hanoi/search">
                 <div class="container">
                     <label>From Date</label>
                     <input type="date", name = "" max= "" id="fromDate">
 
-                    {{--                <label>To Date</label>--}}
-                    {{--                <input type="date", name = "" max= "" id="toDate">--}}
+                    <label>To Date</label>
+                    <input type="date", name = "" max= "" id="toDate">
                     <style>
                         .container{
                             margin:auto;
@@ -66,13 +96,7 @@
             </form>
 
         </th>
-        <th>
-            <form method="post" action="/hanoi">
-                {{csrf_field()}}
-                <input  type="text" placeholder="number" name="query">
-                <button type="submit" >Truy Xuat</button>
-            </form>
-        </th>
+
         {{--        <th>--}}
         {{--            <button type="button" class="btn">Truy Xuat</button>--}}
         {{--            <button class="btn btn-primary" name="submit" type="submit">Truy Xuat</button>--}}
