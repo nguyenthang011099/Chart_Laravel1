@@ -42,6 +42,17 @@
         </th>
         <th>
             <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Graph
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a>Line</a></li>
+                    <li><a>Bar</a></li>
+                    <li><a>Spline</a></li>
+                </ul>
+            </div>
+        </th>
+        <th>
+            <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">City _!_ Province
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -96,17 +107,6 @@
             </form>
 
         </th>
-
-        {{--        <th>--}}
-        {{--            <button type="button" class="btn">Truy Xuat</button>--}}
-        {{--            <button class="btn btn-primary" name="submit" type="submit">Truy Xuat</button>--}}
-        {{--            <style>--}}
-        {{--                .btn{--}}
-
-        {{--                    margin:auto;--}}
-        {{--                }--}}
-        {{--            </style>--}}
-        {{--        </th>--}}
 
     </tr>
     </thead>
