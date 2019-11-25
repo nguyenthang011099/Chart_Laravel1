@@ -75,18 +75,18 @@
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
-                    <li><a href="hanoi">Tháng 1</a></li>
-                    <li><a href="haiduong">Tháng 2</a></li>
-                    <li><a href="hungyen">Tháng 3</a></li>
-                    <li><a href="vinhphuc">Tháng 4</a></li>
-                    <li><a href="hoabinh">Tháng 5</a></li>
-                    <li><a href="phutho">Tháng 6</a></li>
-                    <li><a href="bacninh">Tháng 7</a></li>
-                    <li><a href="bacgiang">Tháng 8</a></li>
-                    <li><a href="hanoi">Tháng 9</a></li>
-                    <li><a href="hanoi">Tháng 10</a></li>
-                    <li><a href="hanoi">Tháng 11</a></li>
-                    <li><a href="hanoi">Tháng 12</a></li>
+                    <li><a href="hanoi">January</a></li>
+                    <li><a href="haiduong">February</a></li>
+                    <li><a href="hungyen">March</a></li>
+                    <li><a href="vinhphuc">April</a></li>
+                    <li><a href="hoabinh">May</a></li>
+                    <li><a href="phutho">June</a></li>
+                    <li><a href="bacninh">July</a></li>
+                    <li><a href="bacgiang">August</a></li>
+                    <li><a href="hanoi">Septemper</a></li>
+                    <li><a href="hanoi">October</a></li>
+                    <li><a href="hanoi">November</a></li>
+                    <li><a href="hanoi">December</a></li>
                 </ul>
             </div>
         </th>
@@ -99,8 +99,8 @@
                     <label>To Date</label>
                     <input type="date", name = "" max= "" id="toDate">
                     <style>
-                        .container{
-                            margin:auto;
+                        div{
+                            margin-right:2em;
                         }
                     </style>
                 </div>
@@ -123,7 +123,7 @@
                 <h2 style="text-align:left">Weather Forecast in Ha Noi vs Hung Yen</h2>
             </div>
             <div class="panel-body">
-                <canvas id="canvas" height="240" width="600"></canvas>
+                <canvas id="canvas" height=350" width="800"></canvas>
             </div>
         </div>
     </div>

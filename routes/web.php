@@ -36,7 +36,15 @@ Route::get('/hnview','HanoiController@search');
 Route::get('/searchhanoi','HanoiController@search');
 
 
-Route::get('/hnvshy','HanoiController@compare');
+Route::get('/hnvsbg','HanoiController@comparevsbg');
+Route::get('/hnvsbn','HanoiController@comparevsbn');
+Route::get('/hnvshd','HanoiController@comparevshd');
+Route::get('/hnvshb','HanoiController@comparevshb');
+Route::get('/hnvshy','HanoiController@comparevshy');
+Route::get('/hnvspt','HanoiController@comparevspt');
+Route::get('/hnvsvp','HanoiController@comparevsvp');
+
+
 Route::get('/charthnvshy','HanoiController@show');
 
 Route::get('/chartphutho','PhuthoController@chart');
