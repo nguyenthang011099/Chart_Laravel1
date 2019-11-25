@@ -134,18 +134,5 @@ class HanoiController extends Controller
             ->get();
         return response()->json($result);
     }
-    public function showvshy(){
-        $result= DB::table('hanois')
-
-
-            ->join('hungyens','hanois.ID','hungyens.ID')
-            ->select('hanois.ID','hanois.TemperatureHN','hungyens.TemperatureHY'
-                                ,'hanois.HumidHN','hungyens.HumidHY'
-                                , 'hanois.WindHN','hungyens.WindHY')
-            ->take(30)
-            ->get();
-        return response()->json($result);
-    }
-
 
 }

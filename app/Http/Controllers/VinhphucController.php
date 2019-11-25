@@ -9,7 +9,7 @@ class VinhphucController extends Controller
 {
     public function index()
     {
-        return view('vinhphucview');
+        return view('only_chart.vinhphucview');
     }
     public function chart()
     {

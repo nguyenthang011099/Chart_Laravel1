@@ -121,9 +121,9 @@
             response.forEach(function(data){
                 Years.push(data.Time);
                 // Labels.push(data.stockName);
-                Wind.push(data.Wind);
-                Temperature.push(data.Temperature);
-                Humid.push(data.Humid);
+                Wind.push(data.WindVP);
+                Temperature.push(data.TemperatureVP);
+                Humid.push(data.HumidVP);
             });
             var ctx = document.getElementById("canvas").getContext('2d');
             var myChart = new Chart(ctx, {
